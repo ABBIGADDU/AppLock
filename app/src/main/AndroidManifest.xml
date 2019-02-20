@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.user1.applock">
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY"/>
+
+    <application
+        android:name=".project.application.AppLockApplication"
+        android:allowBackup="true"
+        android:exported="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:manageSpaceActivity=".project.activities.ManageSpaceActivity"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+<!--
+        <provider
+            android:name=""
+            android:authorities="${fileAuthorities}"
+            android:exported="true"
+            android:readPermission="android.permission.permRead">
+        </provider>
+-->
+
+        <activity android:name=".project.activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".project.activities.SecondActivity" />
+
+        <activity android:name=".project.activities.ManageSpaceActivity" />
+        <activity android:name=".project.activities.FirstActivity" />
+
+        <service android:name=".project.services.MonitorService" />
+    </application>
+
+</manifest>

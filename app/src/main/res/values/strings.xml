@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AppLock</string>
+    <string name="lib_name">PatternLockView</string>
+    <string name="message_pattern_dot_added">Dot added to pattern</string>
+    <string name="message_pattern_started">Pattern drawing started</string>
+    <string name="message_pattern_detected">Pattern drawing completed</string>
+    <string name="message_pattern_cleared">Pattern cleared</string>
+    <string name="lib_name_rx">RxPatternLockView</string>
+    <string name="draw_an_unlock_pattern">Draw an unlock pattern</string>
+</resources>
